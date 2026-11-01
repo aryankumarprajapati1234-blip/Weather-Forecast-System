@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+
+.search-box {
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-box button:hover {
+    background: #444;
+}
+
+#error {
+    color: #b00020;
+    margin: 15px;
+    font-weight: bold;
+}
+
+.current-weather {
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 25px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.current-weather h2 {
+    font-size: 28px;
+}
+
+.weather-icon {
+    font-size: 70px;
+    margin: 15px;
+}
+
+#temperature {
+    font-size: 45px;
+}
+
+#condition {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.details div {
+    background: #f2f2f2;
+    padding: 15px 25px;
+    border-radius: 12px;
+    min-width: 130px;
+}
+
+.details span {
+    font-size: 25px;
+}
+
+.details p {
+    margin: 5px;
+    color: #666;
+}
+
+.forecast-title {
+    color: white;
+    margin: 30px 0 15px;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.forecast-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 8px;
+    border-radius: 15px;
+}
+
+.forecast-card .icon {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.forecast-card h3 {
+    font-size: 15px;
+}
+
+.forecast-card p {
+    margin: 5px;
+}
+
+@media (max-width: 700px) {
+
+    .forecast {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+}
